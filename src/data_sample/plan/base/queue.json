@@ -1,0 +1,16 @@
+{
+  "queue": [
+    {
+      "type": "ST",
+      "plans": [
+        "data_sample/plan/範例",
+        "data_sample/plan/範例2"
+      ]
+    },
+    {
+      "type": "MT",
+      "poolSize": 6,
+      "plans": ["all"]
+    }
+  ]
+}

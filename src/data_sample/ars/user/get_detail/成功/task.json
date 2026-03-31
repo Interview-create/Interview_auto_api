@@ -1,0 +1,31 @@
+{
+  "name": "尋單人",
+  "description": "尋單人成功",
+  "events": [
+    "is_keep"
+  ],
+  "headers": {
+    "Authorization": "{{ars_token}}"
+  },
+  "payload": {
+    "account": "account"
+  },
+  "expect": {
+    "status_code": 200,
+    "response": {
+      "PLAN": [
+        {
+          "LOGINNAME": "LOGINNAME",
+          "AGCODE": "1090587",
+          "MULTI_PROPORTION": [
+            {
+              "GAME_CODE": "GAME_CODE",
+              "DISCOUNT": "0.80",
+              "PERCENT": "50.00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

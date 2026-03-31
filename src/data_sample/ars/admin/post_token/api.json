@@ -1,0 +1,7 @@
+{
+  "description": "登入",
+  "server_name": "ars-api",
+  "method": "POST",
+  "path": "api/v1/admin/token",
+  "tolerable_seconds": 0.01
+}

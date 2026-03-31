@@ -1,0 +1,31 @@
+{
+  "name": "看錢有沒有對",
+  "description": "看錢有沒有對",
+  "events": [
+    "merge_ars_account"
+  ],
+  "headers": {
+    "Authorization": "{{ars_token}}"
+  },
+  "payload": {
+    "user_id": "{{user_id}}",
+    "account": "{{account}}",
+    "credit_type": 0,
+    "currency": 3,
+    "page": 1,
+    "page_size": 5
+  },
+  "expect": {
+    "status_code": 200,
+    "response": {
+      "transaction_record": [
+        {
+          "OLD_AMOUNT": 200000,
+          "NEW_AMOUNT": 50000,
+          "CHANGE_AMOUNT": -150000,
+          "CURRENCY": "PHP"
+        }
+      ]
+    }
+  }
+}

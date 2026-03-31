@@ -1,0 +1,14 @@
+{
+  "get": {
+    "description": "",
+    "tasks": [
+      "get/成功"
+    ]
+  },
+  "post2": {
+    "description": "",
+    "tasks": [
+      "post/成功"
+    ]
+  }
+}

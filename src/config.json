@@ -1,0 +1,259 @@
+{
+  "environment": "local",
+  "request_verify": true,
+  "env": {
+    "local": {
+      "ars-api": {
+        "host": "",
+        "oracle": {
+          "username": "username",
+          "password": "password",
+          "host": "",
+          "port": "1521",
+          "sid": "stg"
+        },
+        "redis": {
+          "host": "",
+          "port": 6311,
+          "password": "password"
+        }
+      },
+      "ars-bank-api": {
+        "host": "",
+        "oracle": {
+          "username": "username",
+          "password": "password",
+          "host": "",
+          "port": "1521",
+          "sid": "stg"
+        },
+        "redis": {
+          "host": "",
+          "port": 6311,
+          "password": "password"
+        }
+      },
+      "ams-api": {
+        "host": "",
+        "oracle": {
+          "username": "username",
+          "password": "password",
+          "host": "",
+          "port": "1521",
+          "sid": "stg"
+        },
+        "redis": {
+          "host": "",
+          "port": 6311,
+          "password": "password"
+        }
+      },
+      "cog-api": {
+        "host": ""
+      },
+      "cog-wallet": {
+        "host": ""
+      },
+      "cash-mgmt-api": {
+        "host": "",
+        "redis": {
+          "host": "",
+          "port": 6311,
+          "password": "password"
+        }
+      },
+      "bank-mgmt-api": {
+        "host": "",
+        "redis": {
+          "host": "",
+          "port": 6311,
+          "password": "password"
+        }
+      },
+      "ars-proxy-gaming-api": {
+        "host": ""
+      },
+      "wt-ams-api": {
+        "host": "",
+        "oracle": {
+          "username": "username",
+          "password": "password",
+          "host": "",
+          "port": "1521",
+          "sid": "sid"
+        },
+        "redis": {
+          "host": "",
+          "port": 6311,
+          "password": "password"
+        }
+      }
+    },
+    "dev": {
+      "ars-api": {
+        "host": "",
+        "oracle": {
+          "username": "username",
+          "password": "password",
+          "host": "",
+          "port": "1521",
+          "sid": "sid"
+        },
+        "redis": {
+          "host": "",
+          "port": 6379,
+          "password": "password"
+        }
+      },
+      "ars-bank-api": {
+        "host": ""
+      },
+      "ams-api": {
+        "host": ""
+      },
+      "cog-api": {
+        "host": ""
+      },
+      "cash-mgmt-api": {
+        "host": "",
+        "redis": {
+          "host": "",
+          "port": 6311,
+          "password": "password"
+        }
+      },
+      "bank-mgmt-api": {
+        "host": "",
+        "redis": {
+          "host": "",
+          "port": 6311,
+          "password": "password"
+        }
+      },
+      "wt-ams-api": {
+        "host": "",
+        "oracle": {
+          "username": "username",
+          "password": "password",
+          "host": "",
+          "port": "1521",
+          "sid": "stg"
+        },
+        "redis": {
+          "host": "",
+          "port": 6311,
+          "password": "password"
+        }
+      }
+    },
+    "stage": {
+      "ars-api": {
+        "host": "",
+        "oracle": {
+          "username": "username",
+          "password": "password",
+          "host": "",
+          "port": "1521",
+          "sid": "stg"
+        },
+        "redis": {
+          "host": "",
+          "port": 6311,
+          "password": "password"
+        }
+      },
+      "ars-bank-api": {
+        "host": "",
+        "oracle": {
+          "username": "username",
+          "password": "password",
+          "host": "",
+          "port": "1521",
+          "sid": "stg"
+        },
+        "redis": {
+          "host": "",
+          "port": 6311,
+          "password": "password"
+        }
+      },
+      "ams-api": {
+        "host": "",
+        "oracle": {
+          "username": "username",
+          "password": "password",
+          "host": "",
+          "port": "1521",
+          "sid": "stg"
+        },
+        "redis": {
+          "host": "",
+          "port": 6311,
+          "password": "password"
+        }
+      },
+      "cog-api": {
+        "host": ""
+      },
+      "cash-mgmt-api": {
+        "host": "",
+        "redis": {
+          "host": "",
+          "port": 6311,
+          "password": "password"
+        }
+      },
+      "bank-mgmt-api": {
+        "host": "",
+        "redis": {
+          "host": "",
+          "port": 6311,
+          "password": "password"
+        }
+      },
+      "wt-ams-api": {
+        "host": "",
+        "oracle": {
+          "username": "username",
+          "password": "password",
+          "host": "",
+          "port": "1521",
+          "sid": "stg"
+        },
+        "redis": {
+          "host": "",
+          "port": 6311,
+          "password": "password"
+        }
+      }
+    }
+  },
+  "notification_center": {
+    "slack": {
+      "webhook_url": "https://hooks.slack.com/services/aaa",
+      "channel": "#api-monitor-dev",
+      "username": "Automation",
+      "switch": true
+    }
+  },
+  "default_events": [
+    "keep_values",
+    "merge_values"
+  ],
+  "default_request_events": [
+    "keep_values",
+    "merge_values",
+    "keep_values",
+    "merge_values"
+  ],
+  "default_response_events": [
+    "keep_values",
+    "merge_values"
+  ],
+  "version_path": "data/plan/base/version.json",
+  "queue_path": "data/plan/base/queue.json",
+  "report_url": "https://ci.com/job/automation-run-dev/HTML_20Report/",
+  "full_log": true,
+  "plan_name": [],
+  "request_timeout": 60
+}

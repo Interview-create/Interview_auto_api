@@ -1,0 +1,12 @@
+{
+  "版本": {
+    "description": "版本",
+    "cases": [
+      "ars/version/get",
+      "ams/version/get",
+      "ars-bank/version/get",
+      "cog/version/get"
+    ]
+  },
+  "inherit": true
+}

@@ -1,0 +1,34 @@
+{
+  "name": "",
+  "description": "",
+  "events": [
+    "proposal"
+  ],
+  "headers": {
+    "Authorization": "{{ars_token}}"
+  },
+  "payload": {
+    "proposal_id": "{{proposalId}}",
+    "rolling": 0,
+    "regular": 0,
+    "tip": 0,
+    "refunds": [],
+    "return_cash": 0,
+    "return_card": 0,
+    "rebates": [
+      {
+        "user": 349091,
+        "rate": 1,
+        "type": 1
+      }
+    ],
+    "deposit_remark": "",
+    "remark": "",
+    "op_password": "op_password",
+    "verify_password": "verify_password",
+    "form_data_uuid": "{{$guid}}"
+  },
+  "expect": {
+    "status_code": 200
+  }
+}

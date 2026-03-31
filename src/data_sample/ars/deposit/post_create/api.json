@@ -1,0 +1,9 @@
+{
+  "name": "deposit/search",
+  "description": "存錢",
+  "server_name": "ars-api",
+  "method": "POST",
+  "path": "api/v1/deposit/create",
+  "headers": {
+  }
+}

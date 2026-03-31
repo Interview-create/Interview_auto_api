@@ -1,0 +1,29 @@
+{
+  "登入加開工": {
+    "environment": "local",
+    "description": "登入且取得版號",
+    "tolerable_seconds": 1,
+    "測試的目的": "",
+    "測試的範圍": "",
+    "測試的時間": "",
+    "loop": 1,
+    "for_loop_key": {
+      "for_loop_key1": {
+        "initial_value": 10,
+        "step_size": 1,
+        "prefix": "TT",
+        "padding_length": 0
+      },
+      "for_loop_key2": {
+        "initial_value": 1,
+        "step_size": 1,
+        "prefix": "TT",
+        "padding_length": 0
+      }
+    },
+    "for說明": "吃loop的數字，initial_value:迴圈起始值，step_size:每次迴圈增加或減少的值，prefix: 字符串前綴，padding_length: 補齊字串時的總長度",
+    "cases": [
+      "ars/version/get"
+    ]
+  }
+}

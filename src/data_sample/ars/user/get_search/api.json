@@ -1,0 +1,8 @@
+{
+  "name": "",
+  "description": "現場帳房/戶口管理/戶口列表/查詢用戶",
+  "server_name": "ars-api",
+  "method": "GET",
+  "path": "api/v1/user/search",
+  "headers": {}
+}

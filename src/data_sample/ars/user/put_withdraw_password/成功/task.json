@@ -1,0 +1,21 @@
+{
+  "name": "改提款密碼成功",
+  "description": "改提款密碼成功",
+  "events": [
+    "merge_ars_account"
+  ],
+  "headers": {
+    "Authorization": "{{ars_token}}"
+  },
+  "payload": {
+    "user_id": "{{user_id}}",
+    "op_password": "op_password",
+    "verify_password": "verify_password",
+    "new_password": "new_password",
+    "force_update": 1,
+    "form_data_uuid": "{{$guid}}"
+  },
+  "expect": {
+    "status_code": 200
+  }
+}

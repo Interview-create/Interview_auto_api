@@ -1,0 +1,32 @@
+{
+  "加彩": {
+    "description": "加彩",
+    "tasks": [
+      "post_extend_chips/成功"
+    ]
+  },
+    "K現": {
+    "description": "K現",
+    "tasks": [
+      "post_return_cash/成功"
+    ]
+  },
+    "還m": {
+    "description": "還m",
+    "tasks": [
+      "post_return_refund/成功"
+    ]
+  },
+    "收工": {
+    "description": "收工",
+    "tasks": [
+      "post_settle/成功"
+    ]
+  },
+    "回碼": {
+    "description": "回碼",
+    "tasks": [
+      "post_return_card/成功"
+    ]
+  }
+}

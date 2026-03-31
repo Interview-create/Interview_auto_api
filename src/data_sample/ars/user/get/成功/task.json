@@ -1,0 +1,25 @@
+{
+  "name": "尋單人",
+  "description": "尋單人成功",
+  "tolerable_seconds": 1,
+  "http": {
+    "headers": {
+      "auth": "{{ars-auth}}"
+    }
+  },
+  "headers": {
+    "Authorization": "{{ars_token}}"
+  },
+  "events": [
+    "merge_ars_account"
+  ],
+  "payload": {
+    "account": "{{account}}"
+  },
+  "expect": {
+    "status_code": 200,
+    "response": {
+      "AMOUNT_PHP": 0
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "user/search",
+  "description": "找人",
+  "server_name": "ars-api",
+  "method": "POST",
+  "path": "api/v1/user/create",
+  "headers": {
+  }
+}

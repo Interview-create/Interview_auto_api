@@ -1,0 +1,41 @@
+{
+  "pp_account": {
+    "說明 pp_account": "import 的 key",
+    "payload": {
+      "key": "account",
+      "value": [
+        0,
+        1,
+        "account"
+      ]
+    },
+    "說明 payload": "payload 的內容， key 有吃 parse 'account.ac', value 值",
+    "expect": {
+      "key": "status_code",
+      "value": [
+        200,
+        401,
+        400
+      ]
+    },
+    "說明 expect": "expect 的內容， key 有吃 parse 'account.ac', value 值"
+  },
+  "pp_password": {
+    "payload": {
+      "key": "password",
+      "value": [
+        "account",
+        0,
+        1
+      ]
+    },
+    "expect": {
+      "key": "status_code",
+      "value": [
+        200,
+        401,
+        400
+      ]
+    }
+  }
+}

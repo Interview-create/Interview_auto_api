@@ -1,0 +1,9 @@
+{
+  "name": "outcode/settle",
+  "description": "outcode/settle",
+  "server_name": "ars-api",
+  "method": "POST",
+  "path": "api/v1/outcode/settle",
+  "headers": {
+  }
+}

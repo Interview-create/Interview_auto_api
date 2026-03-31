@@ -1,0 +1,64 @@
+{
+  "events": ["to_json"],
+  "expect": {
+    "status_code": 200
+  },
+  "test_cases": {
+    "成功": {
+      "description": "取得",
+      "keep_payload_values": {
+        "ars_amount_abc": "abc",
+        "ars_amount_def_num": "def",
+        "percent_num": "PLAN[0].MULTI_PROPORTION[0].PERCENT",
+        "acc_json": "acc"
+      },
+      "payload": {
+        "acc": "{\"account\": 123}",
+        "ccc": "{{acc_json}}",
+        "abc": 1,
+        "def": 2,
+        "PLAN": [
+          {
+            "MULTI_PROPORTION": [
+              {
+                "PERCENT": "100"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "成功2": {
+      "description": "取得",
+      "events": [
+        "arithmetic_operators"
+      ],
+      "setting": {
+        "arithmetic_operators_keys": [
+          "amounts[0].amount",
+          "amounts[1].amount"
+        ]
+      },
+      "payload": {
+        "account": "{{for_loop_key1}}",
+        "account2": "{{for_loop_key2}}",
+        "account3": "to_lower({{for_loop_key2}})",
+        "account4": "{{$guid}}",
+        "account5": "{{$unix_timestamp}}",
+        "account6": "to_num(123.123)",
+        "account7": "to_str(123)",
+        "account8": "to_num(124)"
+      },
+      "expect": {
+        "response": {
+          "version": "3.0.3¡¡3",
+          "amounts": [
+            {
+              "amount": "{{percent_num / (1 - ars_amount_def_num) * 100}}"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "login",
+  "description": "登入",
+  "server_name": "ams-api",
+  "method": "GET",
+  "path": "api/v1/version"
+}

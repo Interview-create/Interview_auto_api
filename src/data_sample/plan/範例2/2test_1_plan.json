@@ -1,0 +1,15 @@
+{
+  "登入加開工": {
+    "environment": "local",
+    "description": "登入且取得版號",
+    "tolerable_seconds": 1,
+    "測試的目的": "",
+    "測試的範圍": "",
+    "測試的時間": "",
+    "loop": 2,
+    "cases": [
+      "ars/admin/admin_login",
+      "ars/version/get"
+    ]
+  }
+}

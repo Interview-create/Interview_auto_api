@@ -1,0 +1,69 @@
+{
+  "建人": {
+    "description": "建人",
+    "tasks": [
+      "post_create/建人成功"
+    ]
+  },
+  "找找用戶": {
+    "description": "找找用戶",
+    "tasks": [
+      "get_search/成功"
+    ]
+  },
+  "找個別用戶": {
+    "description": "找找用戶",
+    "tasks": [
+      "get/成功"
+    ]
+  },
+  "手動重置登入密碼": {
+    "description": "手動重置登入密碼",
+    "tasks": [
+      "put_login_password/成功",
+      "put_withdraw_password/成功"
+    ]
+  },
+  "餘額詳情": {
+    "description": "餘額詳情",
+    "tasks": [
+      "get_transaction/成功"
+    ]
+  },
+  "開工後餘額詳情": {
+    "description": "餘額詳情",
+    "tasks": [
+      "get_transaction/開工後成功"
+    ]
+  },
+  "加彩後餘額詳情": {
+    "description": "餘額詳情",
+    "tasks": [
+      "get_transaction/加彩後成功"
+    ]
+  },
+  "戶口餘額-收工前-確認PHP存款": {
+    "description": "戶口餘額-收工前-確認PHP存款",
+    "tasks": [
+      "get_transaction/戶口餘額-收工前-確認PHP存款"
+    ]
+  },
+  "回碼後餘額詳情": {
+    "description": "戶口餘額-收工前-確認PHP存款",
+    "tasks": [
+      "get/回碼後餘額詳情"
+    ]
+  },
+  "戶口列表_精準查詢": {
+    "description": "戶口列表_精準查詢",
+    "tasks": [
+      "get_search/戶口列表_精準查詢"
+    ]
+  },
+  "戶口列表_精準查詢2": {
+    "description": "戶口列表_精準查詢2",
+    "tasks": [
+      "get_search/戶口列表_精準查詢2"
+    ]
+  }
+}

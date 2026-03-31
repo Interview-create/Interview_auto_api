@@ -1,0 +1,7 @@
+log/
+*.DS_Store
+src/env.json
+src/automaiton/*
+src/data
+src/data/*
+*.code-workspace

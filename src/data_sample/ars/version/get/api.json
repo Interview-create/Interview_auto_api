@@ -1,0 +1,7 @@
+{
+  "name": "login",
+  "description": "登入",
+  "server_name": "ars-api",
+  "method": "GET",
+  "path": "api/v1/version"
+}

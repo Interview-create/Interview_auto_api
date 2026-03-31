@@ -1,0 +1,23 @@
+[
+  {
+    "account": "account",
+    "password": "password",
+    "url": "https://a.cc/api/v1/version",
+    "tt": "{{$unix_timestamp}}",
+    "time": "{{s+9加9秒的key}}"
+  },
+  {
+    "account": "account",
+    "password": "password",
+    "url": "https://a.cc/api/v1/version",
+    "tt": "{{$unix_timestamp}}",
+    "time": "{{s+9加9秒的key}}"
+  },
+  {
+    "account": "account",
+    "password": "password",
+    "url": "https://a.cc/api/v1/version",
+    "tt": "{{$unix_timestamp}}",
+    "time": "{{s+9加9秒的key}}"
+  }
+]

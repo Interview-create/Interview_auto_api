@@ -1,0 +1,9 @@
+{
+  "name": "proposal/create",
+  "description": "proposal",
+  "server_name": "ars-api",
+  "method": "POST",
+  "path": "api/v1/proposal/create",
+  "headers": {
+  }
+}

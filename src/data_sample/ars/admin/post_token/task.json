@@ -1,0 +1,94 @@
+{
+  "headers": {
+    "content-type": "application/json",
+    "keep_headers_values": "abc-keep_headers_values",
+    "uuid": "",
+    "udid": ""
+  },
+  "test_cases": {
+    "登入成功": {
+      "description": "登入成功",
+      "events": [
+        "arithmetic_operators"
+      ],
+      "setting": {
+        "sms_verification_key": "ars_USER_ID",
+        "sms_message_key": "message",
+        "arithmetic_operators_keys": [
+          "add"
+        ],
+        "redis": {
+          "del": [
+            "abcyt",
+            "ccc",
+            "AMS-longLimitRate10.1.201.113",
+            "ARS-LMBankLoginFail-10.1.201.113",
+            "ARS-appLongLimitRate10.1.201.113",
+            "ARS-appMediumLimitRate10.1.201.113",
+            "ARS-ban-10.1.201.113",
+            "ARS-ban-*",
+            "ARS-sms-cd-*",
+            "ARS-sms-counter-*"
+          ]
+        },
+        "execute_oracle_sql": [
+          "test.sql"
+        ]
+      },
+      "keep_values": {
+        "name": ""
+      },
+      "keep_payload_values": {
+        "ars_user_id_num": "user_id",
+        "a": "a",
+        "b": "b"
+      },
+      "global_keep_payload_values": {
+        "account": "account"
+      },
+      "import_key": [
+        "pp_account",
+        "pp_password"
+      ],
+      "payload": {
+        "add": "{{ a + b }}",
+        "key1": "{{key1}}",
+        "user_id": "XD-{{$unix_timestamp}}",
+        "account": "account",
+        "password": "password",
+        "tt": "{{$unix_timestamp}}",
+        "time": "{{s+9+9s的key}}",
+        "a": 1,
+        "b": 2
+      },
+      "expect": {
+        "status_code": 200,
+        "response": {
+          "loginname": "account"
+        }
+      }
+    },
+    "登入失敗": {
+      "description": "登入失敗",
+      "keep_values": {
+        "ars_token": null
+      },
+      "payload": {
+        "account": "account",
+        "password": "password"
+      },
+      "expect": {
+        "response": {
+          "loginname": "account",
+          "user_id": "{{ars_user_id_num}}"
+        },
+        "response_content": "export.csv",
+        "response_not_exist": {
+          "perms": {
+            "4": true
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "login",
+  "description": "登入",
+  "server_name": "cog-api",
+  "method": "GET",
+  "path": "api/version"
+}

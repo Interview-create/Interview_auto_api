@@ -1,0 +1,42 @@
+{
+  "name": "",
+  "description": "",
+  "events": [
+    "proposal"
+  ],
+  "headers": {
+    "Authorization": "{{ars_token}}"
+  },
+  "payload": {
+    "proposal_id": "{{proposalId}}",
+    "cash": 0,
+    "card": 150000,
+    "deposit_remark": "",
+    "rebates": [
+      {
+        "user": 349091,
+        "rate": 1,
+        "type": 1
+      }
+    ],
+    "percentage": {},
+    "deposit_cash": 0,
+    "deposit_card": 0,
+    "real_rolling": 150000,
+    "real_regular": 0,
+    "remark": "",
+    "op_password": "op_password",
+    "verify_password": "verify_password",
+    "makers": [],
+    "outcode_withdraw": {
+      "action_password": "111111",
+      "customer_phone_id": 327265,
+      "uuid": "{{$guid}}"
+    },
+    "exchange": {},
+    "form_data_uuid": "{{$guid}}"
+  },
+  "expect": {
+    "status_code": 200
+  }
+}

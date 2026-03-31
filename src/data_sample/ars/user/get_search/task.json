@@ -1,0 +1,90 @@
+{
+  "events": [],
+  "headers": {
+    "Authorization": "{{ars_token}}"
+  },
+  "payload": {},
+  "expect": {},
+  "test_cases": {
+    "戶口列表_精準查詢": {
+      "description": "戶口列表_精準查詢",
+      "keep_values": {
+        "ars_USER_ID": "user_record.[0].USER_ID",
+        "ars_ACCOUNT": "user_record.[0].ACCOUNT"
+      },
+      "payload": {
+        "account": "account",
+        "page": 1,
+        "page_size": 50,
+        "open_room[]": [],
+        "page_num": 1,
+        "is_fuzzy_account": 0
+      },
+      "expect": {
+        "status_code": 200,
+        "response": {
+          "total_count": 1
+        }
+      }
+    },
+    "戶口列表_模糊查詢": {
+      "description": "戶口列表_模糊查詢",
+      "payload": {
+        "account": "account",
+        "page": 1,
+        "page_size": 50,
+        "open_room[]": [],
+        "page_num": 1,
+        "is_fuzzy_account": 1
+      },
+      "expect": {
+        "status_code": 200,
+        "response": {
+          "total_count": 46
+        }
+      }
+    },
+    "戶口列表_精準查詢2": {
+      "description": "戶口列表_精準查詢2",
+      "keep_values": {
+        "ars_USER_ID": "user_record.[0].USER_ID",
+        "ars_ACCOUNT": "user_record.[0].ACCOUNT"
+      },
+      "payload": {
+        "account": "2",
+        "page": 1,
+        "page_size": 50,
+        "open_room[]": [],
+        "page_num": 1,
+        "is_fuzzy_account": 0
+      },
+      "expect": {
+        "status_code": 200,
+        "response": {
+          "total_count": 1
+        }
+      }
+    },
+    "戶口列表_精準查詢O1": {
+      "description": "戶口列表_精準查詢O1",
+      "keep_values": {
+        "ars_USER_ID": "user_record.[0].USER_ID",
+        "ars_ACCOUNT": "user_record.[0].ACCOUNT"
+      },
+      "payload": {
+        "account": "O1",
+        "page": 1,
+        "page_size": 50,
+        "open_room[]": [],
+        "page_num": 1,
+        "is_fuzzy_account": 0
+      },
+      "expect": {
+        "status_code": 200,
+        "response": {
+          "total_count": 1
+        }
+      }
+    }
+  }
+}

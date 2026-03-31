@@ -1,0 +1,28 @@
+{
+  "name": "get proposal detail",
+  "description": "proposal",
+  "events": [
+    "proposal"
+  ],
+  "headers": {
+    "Authorization": "{{ars_token}}"
+  },
+  "payload": {
+    "id": "{{proposal_id}}"
+  },
+  "expect": {
+    "status_code": 200,
+    "response": {
+      "makers": [
+        {
+          "ACCOUNT": "MARKER01",
+          "AMOUNT": 100000,
+          "TOTAL_AMOUNT": 100000,
+          "REFUND": 0,
+          "TOTAL_REFUND": 0,
+          "IS_PAID_OFF": 0
+        }
+      ]
+    }
+  }
+}

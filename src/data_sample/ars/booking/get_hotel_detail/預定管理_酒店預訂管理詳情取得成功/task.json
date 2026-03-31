@@ -1,0 +1,18 @@
+{
+  "name": "",
+  "description": "預定管理_酒店預訂管理詳情",
+  "events": [],
+  "headers": {
+    "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjBjNDc2NjA4MDdhNDU4MmIyMjc2ODY1ZjI4NmM3ZmRlY2Y1NWI5MDU3M2JjZjc1OGY4NWM0YzYyYWViMGI4MWIifQ.eyJyb29tX2lkIjo1MDIsInJvb21fYWNjb3VudCI6IjlEIiwiZ3JvdXBfYWNjb3VudCI6IjlEIiwiZ3JvdXBfaWQiOjU2MiwiYnVzaW5lc3NfaWQiOjMwMiwiYnVzaW5lc3NfYWNjb3VudCI6IjlEIiwiam9iX251bWJlciI6bnVsbCwiYWRtaW5faWQiOjExMTMsImFkbWluX2FjY291bnQiOiJzdXBlcmFkbWluIiwicm9pZF9pZCI6MCwiZGVwdCI6IjEiLCJyb29tX2FnY29kZSI6Ijc4MjY3MCIsIm1pbmltYWxfcm9sbGluZyI6MTAwMCwib3V0Y29kZV91bml0IjoxMDAsIm1pbmltYWxfdGlwIjoyNSwiY29tcGFueV9pZCI6MTIxMjksImRlZmF1bHRfcm9vbSI6MSwicGxhbl9tYXN0ZXJfYWNjb3VudCI6IjlkcndkIiwiYnJhbmNoIjoiOUQiLCJpc19tb2JpbGUiOjAsImlhdCI6MTY3NDAyNjk0NywiZXhwIjoxNjc0MDQ0OTQ3LCJkYXRlIjoxOTM3NSwicGVybXMiOnt9fQ.J6M61i1vMvU6_b42oS379Fed70Bo3XlgTfMmmec9mo4"
+  },
+  "payload": {
+    "ticket": "QH231IE4202657428"
+  },
+  "expect": {
+    "status_code": 200,
+    "response": {
+      "ticket": "QH231IE4202657428",
+      "name": "name"
+    }
+  }
+}

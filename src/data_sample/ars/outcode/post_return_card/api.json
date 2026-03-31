@@ -1,0 +1,9 @@
+{
+  "name": "回碼outcode/return_card",
+  "description": "回碼outcode/return_card",
+  "server_name": "ars-api",
+  "method": "POST",
+  "path": "api/v1/outcode/return_card",
+  "headers": {
+  }
+}

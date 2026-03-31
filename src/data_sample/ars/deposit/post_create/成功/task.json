@@ -1,0 +1,34 @@
+{
+  "name": "存錢成功",
+  "description": "存錢成功",
+  "events": [
+    "merge_ars_account"
+  ],
+  "headers": {
+    "Authorization": "{{ars_token}}"
+  },
+  "payload": {
+    "type": 0,
+    "account": "AUTOVALIDATE000",
+    "teller_list": [
+      {
+        "type": 0,
+        "amount": 200000,
+        "currency": 3,
+        "remark": null
+      },
+      {
+        "type": 0,
+        "amount": 200000,
+        "currency": 0,
+        "remark": null
+      }
+    ],
+    "op_password": "op_password",
+    "verify_password": "verify_password",
+    "form_data_uuid": "{{$guid}}"
+  },
+  "expect": {
+    "status_code": 200
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "開工": {
+    "description": "開工",
+    "tasks": [
+      "post_create/成功",
+      "get_detail/成功"
+    ]
+  },
+  "加彩": {
+    "description": "開工",
+    "tasks": [
+      "get_detail/加彩成功"
+    ]
+  },
+  "K線": {
+    "description": "K線",
+    "tasks": [
+      "get_detail/成功"
+    ]
+  },
+  "提案詳情-取得還Marker後資訊": {
+    "description": "提案詳情-取得還Marker後資訊",
+    "tasks": [
+      "get_detail/提案詳情-取得還Marker後資訊"
+    ]
+  },
+  "戶口餘額-收工前-確認PHP存款": {
+    "description": "戶口餘額-收工前-確認PHP存款",
+    "tasks": [
+      "get_detail/戶口餘額-收工前-確認PHP存款"
+    ]
+  },
+  "提案詳情-收工": {
+    "description": "提案詳情-收工",
+    "tasks": [
+      "get_detail/提案詳情-收工"
+    ]
+  }
+}

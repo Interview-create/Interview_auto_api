@@ -1,0 +1,64 @@
+{
+  "name": "proposal/create",
+  "description": "proposal/create",
+  "events": [
+    "merge_ars_account",
+    "proposal"
+  ],
+  "headers": {
+    "Authorization": "{{ars_token}}"
+  },
+  "payload": {
+    "account": "A",
+    "user_suffix": "",
+    "type": 0,
+    "currency": 3,
+    "chip_currency": 3,
+    "cash": 100000,
+    "card": 50000,
+    "deposit_remark": null,
+    "rebates": [
+      {
+        "user": 349091,
+        "rate": 1,
+        "type": 1
+      }
+    ],
+    "makers": [
+      {
+        "user": 349111,
+        "role": 1,
+        "amount": 100000,
+        "deadline": 20,
+        "remark": "",
+        "type": 0
+      }
+    ],
+    "deposit_cash": 0,
+    "deposit_card": 0,
+    "real_rolling": 250000,
+    "real_regular": 0,
+    "remark": "",
+    "op_password": "op_password",
+    "verify_password": "verify_password",
+    "outcode_withdraw": {
+      "action_password": "111111",
+      "customer_phone_id": 327265,
+      "uuid": "{{$guid}}"
+    },
+    "deposit_withdraw": {
+      "action_password": "111111",
+      "customer_phone_id": 327286,
+      "uuid": "{{$guid}}"
+    },
+    "percentage": {
+      "user": 349112,
+      "rate": 40,
+      "type": 0
+    },
+    "form_data_uuid": "{{$guid}}"
+  },
+  "expect": {
+    "status_code": 200
+  }
+}

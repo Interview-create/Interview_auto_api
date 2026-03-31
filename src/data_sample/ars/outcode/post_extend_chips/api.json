@@ -1,0 +1,9 @@
+{
+  "name": "outcode/extend_chips",
+  "description": "outcode/extend_chips",
+  "server_name": "ars-api",
+  "method": "POST",
+  "path": "api/v1/outcode/extend_chips",
+  "headers": {
+  }
+}

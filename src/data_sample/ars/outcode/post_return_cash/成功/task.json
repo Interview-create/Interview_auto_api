@@ -1,0 +1,22 @@
+{
+  "name": "",
+  "description": "",
+  "events": [
+    "proposal"
+  ],
+  "headers": {
+    "Authorization": "{{ars_token}}"
+  },
+  "payload": {
+    "proposal_id": "{{proposalId}}",
+    "rolling": 0,
+    "regular": 200000,
+    "remark": "",
+    "op_password": "op_password",
+    "verify_password": "verify_password",
+    "form_data_uuid": "{{$guid}}"
+  },
+  "expect": {
+    "status_code": 200
+  }
+}

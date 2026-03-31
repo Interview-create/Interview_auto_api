@@ -1,0 +1,19 @@
+{
+  "name": "尋單人",
+  "description": "尋單人成功",
+  "events": [
+    "merge_ars_account"
+  ],
+  "headers": {
+    "Authorization": "{{ars_token}}"
+  },
+  "payload": {
+    "account": ""
+  },
+  "expect": {
+    "status_code": 200,
+    "response": {
+      "AMOUNT_PHP": 200000
+    }
+  }
+}

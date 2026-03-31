@@ -1,0 +1,9 @@
+{
+  "name": "outcode/return_refund",
+  "description": "outcode/return_refund",
+  "server_name": "ars-api",
+  "method": "POST",
+  "path": "api/v1/outcode/return_refund",
+  "headers": {
+  }
+}

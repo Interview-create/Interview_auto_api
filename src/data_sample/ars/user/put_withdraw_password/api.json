@@ -1,0 +1,9 @@
+{
+  "name": "user/withdraw_password",
+  "description": "withdraw_password",
+  "server_name": "ars-api",
+  "method": "PUT",
+  "path": "api/v1/user/withdraw_password",
+  "headers": {
+  }
+}

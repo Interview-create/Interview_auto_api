@@ -1,0 +1,9 @@
+{
+  "name": "",
+  "description": "預定管理/酒店預訂管理詳情",
+  "server_name": "ars-api",
+  "method": "GET",
+  "path": "api/v1/booking/hotel/detail",
+  "headers": {},
+  "tolerable_seconds": 1
+}

@@ -1,0 +1,38 @@
+{
+  "name": "建人",
+  "description": "建人成功",
+  "events": [
+    "generate_ars_account"
+  ],
+  "keep_values": {
+    "user_id": "user_id"
+  },
+  "headers": {
+    "Authorization": "{{ars_token}}"
+  },
+  "payload": {
+    "account": "A",
+    "role": 0,
+    "name": "name",
+    "type": 1,
+    "lang": 0,
+    "account_group_id": 300523,
+    "enableInterest": 0,
+    "op_password": "op_password",
+    "telbet": 0,
+    "enable_store": 0,
+    "credential": null,
+    "parent_account": null,
+    "ignore_duplicate_primary_phone": 1,
+    "phone": null,
+    "phone2": null,
+    "phone3": null,
+    "plan": [],
+    "phone2_allow_receive_sms": 0,
+    "phone3_allow_receive_sms": 0,
+    "form_data_uuid": "{{$guid}}"
+  },
+  "expect": {
+    "status_code": 200
+  }
+}

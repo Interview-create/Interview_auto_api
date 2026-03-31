@@ -1,0 +1,43 @@
+{
+  "登入加開工": {
+    "environment": "dev",
+    "description": "登入後開工",
+    "tolerable_seconds": 1,
+    "測試的目的": "",
+    "測試的範圍": "",
+    "測試的時間": "",
+    "tasks": [
+      "ars/admin/admin_login"
+    ]
+  },
+  "開戶後開收工": {
+    "environment": "dev",
+    "description": "登入後開工",
+    "tolerable_seconds": 1,
+    "測試的目的": "",
+    "測試的範圍": "",
+    "測試的時間": "",
+    "tasks": [
+      "ars/admin/admin_login",
+      "ars/user/建人",
+      "ars/user/找找用戶",
+      "ars/user/手動重置登入密碼",
+      "ars/deposit/存款",
+      "ars/user/餘額詳情",
+      "ars/proposal/開工",
+      "ars/user/開工後餘額詳情",
+      "ars/outcode/回碼",
+      "ars/user/回碼後餘額詳情",
+      "ars/outcode/加彩",
+      "ars/proposal/加彩",
+      "ars/user/加彩後餘額詳情",
+      "ars/outcode/K現",
+      "ars/proposal/K線",
+      "ars/outcode/還m",
+      "ars/proposal/提案詳情-取得還Marker後資訊",
+      "ars/user/戶口餘額-收工前-確認PHP存款",
+      "ars/outcode/收工",
+      "ars/proposal/提案詳情-收工"
+    ]
+  }
+}

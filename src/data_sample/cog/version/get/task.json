@@ -1,0 +1,14 @@
+{
+  "events": [],
+  "expect": {
+    "status_code": 200
+  },
+  "test_cases": {
+    "成功": {
+      "description": "取得",
+      "expect": {
+        "status_code": 200
+      }
+    }
+  }
+}
